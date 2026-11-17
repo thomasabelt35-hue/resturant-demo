@@ -171,8 +171,8 @@ function getAssistantAnswer(question) {
   if (/phone|contact|email|call/.test(text)) {
     return "The sample contact details are +1 (555) 123-4567 and hello@example.com. They are placeholders; see the Contact page.";
   }
-  if (/menu|dish|food|eat|jollof|waakye|banku|kenkey|red red|fufu|kelewele|price|cost|fish|soup|tilapia|plantain|grill|okra|rice|beans|shito/.test(text)) {
-    return "The sample menu features Ghanaian jollof (GH₵ 85), waakye (GH₵ 75), banku with grilled fish (GH₵ 90), red red (GH₵ 65), and more. Prices are sample amounts in Ghana cedis. Visit the Menu page to browse the dishes.";
+  if (/menu|dish|food|eat|jollof|waakye|banku|kenkey|fufu|kelewele|price|cost|fish|soup|tilapia|plantain|grill|okra|rice|beans|shito/.test(text)) {
+    return "The sample menu features Ghanaian jollof (GH₵ 85), waakye (GH₵ 75), banku with grilled fish (GH₵ 90), beans with plantain (GH₵ 65), and more. Prices are sample amounts in Ghana cedis. Visit the Menu page to browse the dishes.";
   }
   if (/name|restaurant|abel/.test(text)) {
     return "You're chatting with Abel's Assistant for Abel's Restaurant Demo, a sample restaurant site celebrating Ghanaian favorites.";
