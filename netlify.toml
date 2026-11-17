@@ -1,0 +1,20 @@
+# Publish this static site directly from the project root (no build step required).
+[build]
+  publish = "."
+
+# Forward existing table-booking links to the new order-request page.
+[[redirects]]
+  from = "/reservations.html"
+  to = "/orders.html"
+  status = 301
+
+# Let the browser cache the shared styles and scripts for one hour.
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

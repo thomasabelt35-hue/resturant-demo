@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Page metadata and shared stylesheet/script. -->
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fbf8f4">
+  <meta name="description" content="Send an order request for Ghanaian favorites from Abel's Restaurant Demo.">
+  <title>Orders | Abel's Restaurant Demo</title><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Shared navigation; Orders is the active page. -->
+  <header class="site-header"><nav class="nav-bar glass" aria-label="Main navigation"><a class="brand" href="index.html"><span class="brand-mark">A</span><span class="brand-name">Abel's Restaurant Demo</span></a><button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a><a href="orders.html" aria-current="page">Orders</a><a href="contact.html">Contact</a></div><a class="button button--small nav-cta" href="orders.html">Place an order ↗</a></nav></header>
+  <main>
+    <!-- Explain that this form sends an order request, not a confirmed checkout. -->
+    <section class="page-hero"><div class="container"><span class="eyebrow">From our kitchen to you</span><h1>Place an order.</h1><p>Tell us what you’re craving and send your request to our team on WhatsApp. We’ll confirm availability and the order details with you.</p></div><img class="page-hero__image" src="assets/ghana-food/ghana-jollof.jpeg" alt="Ghanaian jollof rice served with grilled chicken and beef"></section>
+    <!-- The details panel and form prepare a WhatsApp order request. -->
+    <section class="section"><div class="container order-layout reveal">
+      <aside class="order-info"><span class="eyebrow">How it works</span><h2>Good food is on its way.</h2><p>Share your dish choices, pickup or delivery request, and contact details. This demo opens a pre-filled WhatsApp message; the restaurant must confirm your order.</p><p><strong>Sample hours:</strong><br>Tuesday–Sunday, 5:00 PM–10:00 PM<br>Closed Monday</p><p>Delivery availability and any address details will be confirmed by the restaurant.</p><p><a href="menu.html">Browse the Ghanaian menu →</a></p><p>Replace the demo WhatsApp number in <code>script.js</code> before publishing.</p></aside>
+      <form class="order-form glass" id="order-form">
+        <div class="form-grid">
+          <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required placeholder="Name"></div>
+          <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="+233 (555) 123-4567"></div>
+          <div class="field"><label for="fulfilment">Pickup or delivery</label><select id="fulfilment" name="fulfilment" required><option value="">Choose one</option><option>Pickup</option><option>Delivery (confirm availability)</option></select></div>
+          <div class="field field--full"><label for="order">What would you like?</label><textarea id="order" name="order" required placeholder="For example: 2 × Ghana Jollof, 1 × Waakye Special"></textarea></div>
+          <div class="field field--full"><label for="notes">Delivery address or other notes (optional)</label><textarea id="notes" name="notes" placeholder="Add your delivery address, dietary requests, or other instructions"></textarea></div>
+        </div>
+        <p class="form-note">Demo only: no online payment or live checkout is connected. Your order is not confirmed until the restaurant replies.</p>
+        <button class="button" type="submit">Continue to WhatsApp <span aria-hidden="true">↗</span></button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div></section>
+  </main>
+  <!-- Shared footer links and sample contact information. -->
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">A</span><span class="brand-name">Abel's Restaurant Demo</span></a><p>Ghanaian favorites, made with heart and served with a warm welcome.</p></div><div class="footer-column"><h3>Explore</h3><a href="about.html">Our story</a><a href="menu.html">The menu</a><a href="gallery.html">Gallery</a></div><div class="footer-column"><h3>Come by</h3><p>Address shown as a sample<br>Replace with your location</p><a href="contact.html">Hours &amp; directions</a></div><div class="footer-column"><h3>Say hello</h3><a href="tel:+15551234567">+1 (555) 123-4567</a><a href="mailto:hello@example.com">hello@example.com</a><a href="orders.html">Place an order</a></div></div><div class="footer-bottom"><span>© 2026 Abel's Restaurant Demo — sample restaurant concept.</span><span>Ghanaian flavor, made to share.</span></div></div></footer>
+</body>
+</html>

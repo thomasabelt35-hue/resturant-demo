@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Page metadata and shared stylesheet/script. -->
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fbf8f4">
+  <meta name="description" content="Explore the Ghanaian dishes served at Abel's Restaurant Demo.">
+  <title>Gallery | Abel's Restaurant Demo</title><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Shared navigation; aria-current marks this page as active. -->
+  <header class="site-header"><nav class="nav-bar glass" aria-label="Main navigation"><a class="brand" href="index.html"><span class="brand-mark">A</span><span class="brand-name">Abel's Restaurant Demo</span></a><button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="gallery.html" aria-current="page">Gallery</a><a href="orders.html">Orders</a><a href="contact.html">Contact</a></div><a class="button button--small nav-cta" href="orders.html">Place an order ↗</a></nav></header>
+  <main>
+    <!-- Photo-led introduction to the Ghanaian food gallery. -->
+    <section class="page-hero page-hero--photo"><img class="hero__image" src="assets/ghana-food/ghana-jollof.jpeg" alt=""><div class="container"><span class="eyebrow">A seat at our table</span><h1>Good things happen around here.</h1><p>A few snapshots of the Ghanaian favorites and the generous meals we love to share.</p></div></section>
+    <!-- Each thumbnail opens its full-size local image in the lightbox below. -->
+    <section class="section"><div class="container"><div class="section-heading reveal"><span class="eyebrow">The Abel's table</span><h2>A taste of Ghana.</h2><p>Tap or click any image to see it up close.</p></div>
+      <div class="gallery-grid reveal">
+        <button class="gallery-item" type="button" data-full="assets/ghana-food/ghana-jollof.jpeg" aria-label="View Ghanaian jollof rice"><img src="assets/ghana-food/ghana-jollof.jpeg" alt="Ghanaian jollof rice with grilled chicken, beef, and plantain"></button>
+        <button class="gallery-item" type="button" data-full="assets/ghana-food/waakye.jpeg" aria-label="View Ghanaian waakye"><img src="assets/ghana-food/waakye.jpeg" alt="Waakye with fish, egg, spaghetti, and sauces"></button>
+        <button class="gallery-item" type="button" data-full="assets/ghana-food/banku-grilled-fish.jpeg" aria-label="View banku with grilled fish"><img src="assets/ghana-food/banku-grilled-fish.jpeg" alt="Banku, grilled fish, and hot pepper sauce"></button>
+        <button class="gallery-item" type="button" data-full="assets/ghana-food/okra-soup.jpeg" aria-label="View Ghanaian okra soup"><img src="assets/ghana-food/okra-soup.jpeg" alt="Ghanaian okra soup with seafood and vegetables"></button>
+        <button class="gallery-item" type="button" data-full="assets/ghana-food/kenkey-with-sauce.jpeg" aria-label="View kenkey with sauce"><img src="assets/ghana-food/kenkey-with-sauce.jpeg" alt="Kenkey served with fish and traditional sauces"></button>
+        <button class="gallery-item" type="button" data-full="assets/ghana-food/red-red-plantain.jpeg" aria-label="View red red and plantain"><img src="assets/ghana-food/red-red-plantain.jpeg" alt="Ghanaian red red stew with ripe fried plantain"></button>
+        <button class="gallery-item" type="button" data-full="assets/ghana-food/red-red.jpeg" aria-label="View red red"><img src="assets/ghana-food/red-red.jpeg" alt="Fried ripe plantain served with red red beans"></button>
+        <button class="gallery-item" type="button" data-full="assets/ghana-food/assorted-grill.jpeg" aria-label="View assorted grilled meats"><img src="assets/ghana-food/assorted-grill.jpeg" alt="A spread of grilled meats and Ghanaian-style sides"></button>
+        <button class="gallery-item" type="button" data-full="assets/ghana-food/ghana-fish-soup.jpeg" aria-label="View Ghanaian fish soup"><img src="assets/ghana-food/ghana-fish-soup.jpeg" alt="Ghanaian fish soup in a rich pepper broth"></button>
+      </div>
+    </div></section>
+    <!-- The shared script populates this dialog and restores focus when it closes. -->
+    <div class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Gallery image"><button class="lightbox__close" type="button" aria-label="Close image">×</button><img src="" alt=""></div>
+    <!-- Link gallery visitors directly to the order-request form. -->
+    <section class="section section--tight"><div class="container feature-card glass reveal" style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:34px"><div><span class="eyebrow">Make it a real meal</span><h2 style="margin:12px 0 0">Bring these flavors to your table.</h2></div><a class="button" href="orders.html">Place an order →</a></div></section>
+  </main>
+  <!-- Shared footer links and sample contact information. -->
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">A</span><span class="brand-name">Abel's Restaurant Demo</span></a><p>Ghanaian favorites, made with heart and served with a warm welcome.</p></div><div class="footer-column"><h3>Explore</h3><a href="about.html">Our story</a><a href="menu.html">The menu</a><a href="gallery.html">Gallery</a></div><div class="footer-column"><h3>Come by</h3><p>Address shown as a sample<br>Replace with your location</p><a href="contact.html">Hours &amp; directions</a></div><div class="footer-column"><h3>Say hello</h3><a href="tel:+15551234567">+1 (555) 123-4567</a><a href="mailto:hello@example.com">hello@example.com</a><a href="orders.html">Place an order</a></div></div><div class="footer-bottom"><span>© 2026 Abel's Restaurant Demo — sample restaurant concept.</span><span>Ghanaian flavor, made to share.</span></div></div></footer>
+  </body>
+</html>
